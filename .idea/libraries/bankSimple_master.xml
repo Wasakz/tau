@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bankSimple-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bankSimple-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
