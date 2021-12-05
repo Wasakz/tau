@@ -26,6 +26,8 @@ time.sleep(2)
 tasks = browser.find_elements(By.CLASS_NAME, "mdi-checkbox-blank-circle-outline")
 tasks[0].click()
 
+time.sleep(2)
+
 doneTasks = browser.find_elements(By.CLASS_NAME, "mdi-delete-circle")
 doneTasks[0].click()
 
