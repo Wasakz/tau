@@ -10,6 +10,8 @@ Użyję własnej aplikacji zrobionej w vue + firebase.
 2. Wprowadź błędne dane do logowania, np. "tezt@tezt.com", a następnie hasło "tezt".
 3. Spróbuj wprowadzić w pasek adresu stronę z zadaniami, dostępną dla zalogowanych użytkowników "https://applist.cf/tasks".
 
+W kolejnych scenariuszach użyje stronę amazona. 
+
 1. Przejdż na stronę https://www.amazon.com
 2. W polu wyszukiwania wpisz "Kindle" i zatwierdź
 3. Kliknij na "Kindle Oasis"
@@ -17,7 +19,6 @@ Użyję własnej aplikacji zrobionej w vue + firebase.
 5. Przejdź do koszyka, klikając na jego ikonę w górnym menu.
 6. Kliknij na "Proceed to checkout"
 
-W kolejnych scenariuszach użyje stronę amazona. 
 
 1. Przejdż na stronę https://www.amazon.com
 2. Kliknij na przycisk rozwijający boczny panel menu.
