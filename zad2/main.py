@@ -4,16 +4,31 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.edge.service import Service
 import time
 
-# Scenariusz 3 Microsoft Edge
+import logging
+
+logger = logging.getLogger("test_logger")
+logger.setLevel(logging.INFO)
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
+
+# Scenariusz 1 Microsoft Edge
 # Version 96.0.1054.43 (Official build) (64-bit)
 
 s = Service("msedgedriver.exe")
 browser = webdriver.Edge(service=s)
-browser.get("http://localhost:8080/")
+
+
+browser.get("https://applist.cf/")
 browser.maximize_window()
 
 time.sleep(2)
 
+logger.info("Przechodzę na stronę applist")
 browser.find_element(By.NAME, "login").send_keys("test@test.com")
 browser.find_element(By.NAME, "password").send_keys("test123")
 browser.find_element(By.NAME, "password").send_keys(Keys.RETURN)
