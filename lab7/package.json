@@ -1,0 +1,24 @@
+{
+  "name": "untitled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --no-color 2>output.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
+  },
+  "devDependencies": {
+    "axios": "^0.24.0",
+    "prettier": "^2.5.1"
+  },
+  "jest": {
+    "coverageDirectory": "/coverage",
+    "coverageReporters": ["json", "text"]
+  }
+}

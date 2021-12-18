@@ -1,0 +1,11 @@
+PASS ./index.test.js
+  √ Status code should be 200 (156 ms)
+  √ Response should have data (61 ms)
+  √ Should be at least 10 users (808 ms)
+  √ First user should be Leanne Graham (72 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        1.491 s
+Ran all test suites.
