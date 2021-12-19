@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --no-color 2>output.txt"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

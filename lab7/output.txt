@@ -1,11 +1,29 @@
-PASS ./index.test.js
-  √ Status code should be 200 (156 ms)
-  √ Response should have data (61 ms)
-  √ Should be at least 10 users (808 ms)
-  √ First user should be Leanne Graham (72 ms)
+FAIL ./index.test.js
+  √ Status code should be 200 (87 ms)
+  √ Response should have data (94 ms)
+  √ Should be at least 10 users (61 ms)
+  √ First user should be Leanne Graham (82 ms)
+  √ First user should be Leanne Graham (62 ms)
+  × Clementine Bauch geo should be object with lat: -68.6102, lng: 47.0653 (64 ms)
 
-Test Suites: 1 passed, 1 total
-Tests:       4 passed, 4 total
+  ● Clementine Bauch geo should be object with lat: -68.6102, lng: 47.0653
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: {"lat": "-68.6102", "lng": "-47.0653"}
+    Received: undefined
+
+      29 | test("Clementine Bauch geo should be object with lat: -68.6102, lng: 47.0653", async () => {
+      30 |   const response = await functions.fetchUser(3);
+    > 31 |   expect(response.data.geo).toEqual({ lat: "-68.6102", lng: "-47.0653" });
+         |                             ^
+      32 | });
+      33 |
+
+      at Object.<anonymous> (index.test.js:31:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
 Snapshots:   0 total
-Time:        1.491 s
+Time:        0.96 s
 Ran all test suites.
