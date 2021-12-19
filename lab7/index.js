@@ -21,9 +21,9 @@ const functions = {
   },
   postUser: async (userData) => {
     const response = axios.post("/posts")
+    return response;
   }
 };
 
 module.exports = functions;
-
 
